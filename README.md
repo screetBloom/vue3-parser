@@ -7,6 +7,9 @@
 - Vue 模板语法和指令
 - 如 `<script setup>` 这样的rfc(暂不考虑支持)
 
+<br>
+<br>
+
 ## 组合式 Api
 
 ### 1.1 setup
@@ -46,7 +49,10 @@ setup 函数是一个新的组件选项。作为在组件内使用 Composition A
 </script>
 ```
 
-### 1.1 defineComponent
+<br>
+<br>
+
+### 1.2 defineComponent
 Composition api体验
 vue3 parser
 
