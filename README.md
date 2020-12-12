@@ -3,14 +3,14 @@
 <br>
 
 涉及到解析的一些核心改变:
-- 组合式 Api
-- Vue 模板语法和指令
+- [组合式 Api](#组合式-api)
+- Vue3 模板语法和指令
 - 如 `<script setup>` 这样的rfc(暂不考虑支持)
 
 <br>
 <br>
 
-## 组合式 Api
+## 一、组合式 Api
 
 ### 1.1 setup
 setup 函数是一个新的组件选项。作为在组件内使用 Composition API 的入口点
@@ -23,8 +23,9 @@ setup 函数是一个新的组件选项。作为在组件内使用 Composition A
 
 <!-- &nbsp; -->
 
+<div style="margin-top: 10px"></div>
 
-
+**代码示例:**
 
 ``` vue
 <template>
@@ -63,3 +64,5 @@ vue3 parser
 
 <br>
 <br>
+
+## 二、Vue3 模板语法和指令
