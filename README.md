@@ -60,7 +60,7 @@ export default {
 ### 1.2 defineComponent
 主要手动渲染函数、TSX 和 IDE 工具支持
 
-#### 具有组件选项的对象
+#### 1.2.1 具有组件选项的对象
 
 ```ts
 import { defineComponent, ref, reactive } from 'vue'
@@ -87,7 +87,7 @@ const MyComponent = defineComponent({
 })
 ```
 
-#### 函数(视作 setup 函数)
+#### 1.2.2 函数(视作 setup 函数)
 
 直接传入一个 `setup` 函数，函数名称将作为组件名称来使用
 
