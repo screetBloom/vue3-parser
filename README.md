@@ -5,7 +5,7 @@
 设计到解析的一些核心改变:
 - 组合式 Api
 - Vue 模板语法
-- 如 <script setup> 这样的rfc(暂不考虑支持)
+- 如 ``` js<script setup>``` 这样的rfc(暂不考虑支持)
 
 ## 组合式 Api
 
