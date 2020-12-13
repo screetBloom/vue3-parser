@@ -115,6 +115,7 @@ const HelloWorld = defineComponent(function HelloWorld() {
 <br>
 
 ## 二、新 Vue3 模板特性和语法
+只考虑需要解析的部分
 
 ### Teleport 组件
 
@@ -135,6 +136,29 @@ teleport 组件它只是单纯的把定义在其内部的内容转移到目标�
   <div>A</div>
   <div>B</div>
 </div>
+```
+
+<br>
+<br>
+
+### defineAsyncComponent
+Vue3 新增的异步组件
+``` js
+// (1) 作为组件导出, 但是功能由其它组件实现
+export default defineAsyncComponent(() =>
+  import('./components/AsyncComponent.vue')
+)
+
+// (2) resolve 组件对象, 可能会是 jsx 组件
+export default defineAsyncComponent(
+  () =>
+    new Promise((resolve, reject) => {
+      resolve({
+        name: 'xxx',
+        template: '<div>I am async component!</div>'
+      })
+    })
+)
 ```
 
 <br>
@@ -334,12 +358,13 @@ export default defineAsyncComponent(
 
 | 能力拆分 | 谁来支持 | 预计完成时间点 |
 | -------- | -------- | -------------- |
-defineComponent | xxx | 2月17号
-defineAsyncComponent | xxx | 2月17号
-events | xxx | 2月17号
-slots | xxx | 2月17号
-methods | xxx | 2月17号
-name | xxx | 2月17号
+[defineComponent](#12-definecomponent) | xxx | 2月17号
+[defineAsyncComponent](#defineAsyncComponent) | xxx | 2月17号
+[teleport 组件](#teleport-组件) | xxx | 2月17号
+[events](#322-events) | xxx | 2月17号
+[slots](#323-slots) | xxx | 2月17号
+[methods](#325-methods) | xxx | 2月17号
+[name](#326-name) | xxx | 2月17号
 
 
 
