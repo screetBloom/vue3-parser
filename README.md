@@ -358,7 +358,7 @@ export default defineAsyncComponent(
 
 | 能力拆分 | 谁来支持 | 预计完成时间点 |
 | -------- | -------- | -------------- |
-[defineComponent](#12-definecomponent) | xxx | 2月17号
+[defineComponent](#12-definecomponent) | xxx | 1月15号
 [defineAsyncComponent](#defineAsyncComponent) | xxx | 2月17号
 [teleport 组件](#teleport-组件) | xxx | 2月17号
 [events](#322-events) | xxx | 2月17号
